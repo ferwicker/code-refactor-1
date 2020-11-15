@@ -15,20 +15,51 @@ The most obvious aspect to take into account when checking code for accesibility
 Using semantic tags in HTML whenever possible instead of generic tags such as `<div>` elements helps give creen readers context of the page structure, improving accesibility. It also makes it easier for developers to read and modify the code in the future.
 
 ## Changes to HTML and CSS
-In addition to accesibility focused changes, I made changes to the HTML and CSS files to make is easier to read, with comments and indentation, and consolidated several CSS classes that were redundant to make it easier to make changes to all elements that use the same style. Other changes were necessary due to the addition of semantic tags to the HTML.
+In addition to accesibility focused changes, I made changes to the HTML and CSS files to make is easier to read, with comments and indentation, and consolidated several CSS classes that were redundant to make it easier to make changes to all elements that use the same style. Order was reorganised to match HTML order, unnecessarily specific selectors were modified. Other changes were necessary due to the addition of semantic tags to the HTML.
 
-*Example of consolidated classes:*
+### Example of consolidated classes
 
-**Before** | **After**
------------- | -------------
-Several identical classes | Consolidated class
-Content in the first column | `.services {
+**Before**
+*Several identical classes*
+
+    `.search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}`
+    }
+
+    .online-reputation-management {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
+
+    .social-media-marketing {
+        margin-bottom: 20px;
+        padding: 50px;
+        height: 300px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #0072bb;
+        color: #ffffff;
+    }
+    `
+
+**After**
+*Consolidated class*
+
+    `.services {
+            margin-bottom: 20px;
+            padding: 50px;
+            height: 300px;
+            background-color: #0072bb;
+            color: #ffffff;
+    }`
 
 
 ## Credits

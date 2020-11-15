@@ -1,12 +1,20 @@
  # Horiseon Social Solution Services - Code Refactor
 In this project, I refactored the exisiting code for *Horiseon's* homepage to improve its compliance with accesibility standards. I also made changes to the HTML file to include semantic tags in the site structure, and consolidated and reordered the CSS styles in order to make it easier to modify and read if future changes are required.
 
+## Table of contents
+  - [Why Accessibility?](#why-accessibility)
+    - [Images and alt text](#images-and-alt-text)
+    - [Semantic HTML](#semantic-html)
+  - [Changes to HTML and CSS](#changes-to-html-and-css)
+    - [Example of consolidated classes](#example-of-consolidated-classes)
+  - [Credits](#credits)
+
 ## Why Accessibility?
 Making the web more accessible helps users with disabilities use and understand website or other tools in the way that they are designed to be used, making for a more inclusive experience.
 
 There has recently been a big push for accesibility, and it has also become important for websites' SEO rankings. Although this gives businesses an extra reason to take accesibility into account, it has also opened important conversations around how people with disabilities use the web.
 
-### Images
+### Images and alt text
 The most obvious aspect to take into account when checking code for accesibility is making sure that all images have alt text added. It is important to note that this does not mean every single image on the page needs to have a description. Images that do not add any value or information, such as icons with descriptive text next to them, have a null alt text to avoid redundancy, such as in the example below.
 
 ![Icon example](/README-assets/icon-example.png)

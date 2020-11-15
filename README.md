@@ -1,10 +1,10 @@
  # Horiseon Social Solution Services - Code Refactor
-In this project, I refactored the exisiting code for Horiseon's homepage to make it compliant with accesibility standards. I also made changes to the HTML file to include semantic tags in the site structure, and consolidated and reordered the CSS styles in order to make it easier to modify and read if future changes are required.
+In this project, I refactored the exisiting code for *Horiseon's* homepage to improve its compliance with accesibility standards. I also made changes to the HTML file to include semantic tags in the site structure, and consolidated and reordered the CSS styles in order to make it easier to modify and read if future changes are required.
 
 ## Why Accessibility?
-Making the web more accessible helps users with disabilities, like visual impairments, use and understand website or other tools in the way that they are designed to be used, making for a more inclusive experience.
+Making the web more accessible helps users with disabilities use and understand website or other tools in the way that they are designed to be used, making for a more inclusive experience.
 
-There has recently been a big push for accesibility, it has also become important for websites' SEO rankings. Although this gives businesses an extra reason to take accesibility into account, it has also opened important conversations around how people with disabilities use the web.
+There has recently been a big push for accesibility, and it has also become important for websites' SEO rankings. Although this gives businesses an extra reason to take accesibility into account, it has also opened important conversations around how people with disabilities use the web.
 
 ### Images
 The most obvious aspect to take into account when checking code for accesibility is making sure that all images have alt text added. It is important to note that this does not mean every single image on the page needs to have a description. Images that do not add any value or information, such as icons with descriptive text next to them, have a null alt text to avoid redundancy, such as in the example below.
@@ -19,10 +19,10 @@ In addition to accesibility focused changes, I made changes to the HTML and CSS 
 
 ### Example of consolidated classes
 
-**Before**
+**Before -**
 *Several identical classes*
 
-    `.search-engine-optimization {
+    .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -48,19 +48,21 @@ In addition to accesibility focused changes, I made changes to the HTML and CSS 
         background-color: #0072bb;
         color: #ffffff;
     }
-    `
 
-**After**
+**After -**
 *Consolidated class*
 
-    `.services {
+    .services {
             margin-bottom: 20px;
             padding: 50px;
             height: 300px;
             background-color: #0072bb;
             color: #ffffff;
-    }`
+    }
 
+The final result is visually identical to the original site, but with better accessibility, code readability and structure. [View refactored site here.](https://ferwicker.github.io/homework-1-code-refactor/)
+
+![Site screenshot](/README-assets/01-html-css-git-homework-demo.png)
 
 ## Credits
 For information on making emojis accesible to screen readers with alt text, this article and example from Adrian Roselli was useful: https://adrianroselli.com/2016/12/accessible-emoji-tweaked.html 
